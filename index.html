@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Siwar Khorchani, diplômée en systèmes embarqués et IoT. Projets ESP32, Raspberry Pi, Edge AI et Flutter.">
+  <title>Siwar Khorchani | Embedded Systems & IoT</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --text: #17243b;
+      --muted: #607089;
+      --primary: #245be8;
+      --border: #e1e7f0;
+      --hero: #101d35;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1080px, 90%); margin: auto; }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { font-weight: 800; font-size: 18px; }
+    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .nav-links a { color: var(--text); font-size: 14px; }
+
+    .hero {
+      background: var(--hero);
+      color: white;
+      padding: 90px 0;
+    }
+    .eyebrow {
+      color: #8fcaff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.12;
+      margin: 18px 0;
+      max-width: 800px;
+    }
+    .hero p {
+      color: #d3deef;
+      max-width: 680px;
+      font-size: 17px;
+    }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      background: var(--primary);
+      color: white;
+    }
+    .btn-outline { border: 1px solid #9aabc5; color: white; background: transparent; }
+
+    section { padding: 65px 0; scroll-margin-top: 75px; }
+    .section-label {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h2 { font-size: 32px; margin: 8px 0 15px; }
+    .intro { color: var(--muted); max-width: 720px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 25px;
+    }
+    .card h3 { margin-top: 0; font-size: 21px; }
+    .card p { color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .tag {
+      background: #edf3ff;
+      color: #234db4;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .skill {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+    .contact { background: #eaf0fa; }
+    footer {
+      background: var(--hero);
+      color: #d3deef;
+      padding: 25px 0;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 12px; }
+      .hero { padding: 60px 0; }
+      .grid { grid-template-columns: 1fr; }
+      h2 { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#accueil">SIWAR KHORCHANI</a>
+    <div class="nav-links">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="container">
+      <div class="eyebrow">EMBEDDED SYSTEMS · IoT · EDGE AI</div>
+      <h1>Des systèmes intelligents pour un monde connecté.</h1>
+      <p>
+        Bonjour, je suis Siwar Khorchani, diplômée d’un Mastère
+        professionnel en Systèmes Embarqués & IoT. Je m’intéresse
+        aux systèmes embarqués, à l’Internet des objets et aux
+        solutions intelligentes connectées.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projets">Découvrir mes projets</a>
+        <a class="btn btn-outline" href="#contact">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="container">
+      <div class="section-label">Présentation</div>
+      <h2>À propos de moi</h2>
+      <p class="intro">
+        Mon parcours associe systèmes embarqués, IoT et développement
+        logiciel. À travers mes projets académiques et pratiques,
+        j’ai travaillé sur la communication entre équipements,
+        l’intégration de capteurs, les applications connectées et
+        l’automatisation de systèmes intelligents.
+        Je recherche une opportunité professionnelle pour développer
+        mes compétences et contribuer à des projets techniques.
+      </p>
+    </div>
+  </section>
+
+  <section id="projets">
+    <div class="container">
+      <div class="section-label">Portfolio</div>
+      <h2>Mes projets</h2>
+      <p class="intro">
+        Quelques domaines de réalisation. Les fiches seront enrichies
+        avec les démonstrations, images et détails techniques des projets.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>01. Smart Home autonome</h3>
+          <p>
+            Conception et implémentation d’une Smart Home autonome
+            basée sur Edge AI et Agentic AI, combinant capteurs,
+            actionneurs, communication IoT et coordination de décisions
+            liées à la sécurité, au confort et à l’énergie.
+          </p>
+          <div class="tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">Edge AI</span>
+            <span class="tag">Docker</span>
+          </div>
+          <p><strong>Application :</strong> automatisation intelligente de l’habitat.</p>
+        </article>
+
+        <article class="card">
+          <h3>02. Application mobile IoT</h3>
+          <p>
+            Développement d’une interface mobile permettant de
+            consulter les informations du système connecté, suivre
+            les données et accéder aux fonctionnalités disponibles.
+          </p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">API</span>
+            <span class="tag">IoT</span>
+          </div>
+          <p><strong>Application :</strong> interaction avec un système connecté.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <div class="container">
+      <div class="section-label">Savoir-faire</div>
+      <h2>Compétences techniques</h2>
+      <p class="intro">
+        Technologies mobilisées dans mes projets et à détailler
+        selon mon niveau de maîtrise.
+      </p>
+      <div class="skills">
+        <span class="skill">ESP32</span>
+        <span class="skill">STM32</span>
+        <span class="skill">Arduino</span>
+        <span class="skill">Raspberry Pi</span>
+        <span class="skill">Python</span>
+        <span class="skill">Flutter</span>
+        <span class="skill">MQTT</span>
+        <span class="skill">HTTP / REST API</span>
+        <span class="skill">Edge AI</span>
+        <span class="skill">Agentic AI</span>
+        <span class="skill">Docker</span>
+        <span class="skill">n8n</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label">Restons en contact</div>
+      <h2>Vous avez une opportunité ?</h2>
+      <p class="intro">
+        Je suis intéressée par les opportunités en systèmes embarqués,
+        IoT et développement de solutions intelligentes.
+        N’hésitez pas à me contacter.
+      </p>
+      <div class="buttons">
+        <!-- Remplace l'adresse ci-dessous par ton e-mail professionnel -->
+        <a class="btn" href="mailto:TON-EMAIL@example.com">M’envoyer un e-mail</a>
+        <!-- Remplace les liens par tes profils réels -->
+        <a class="btn btn-outline" style="color:#17243b;border-color:#8293ad"
+           href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn-outline" style="color:#17243b;border-color:#8293ad"
+           href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Siwar Khorchani · Portfolio professionnel
+  </div>
+</footer>
+
+</body>
+</html>
